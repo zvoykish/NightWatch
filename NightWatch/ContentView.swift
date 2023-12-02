@@ -19,7 +19,7 @@ struct ContentView: View {
                     let sectionTasks = nightWatchTasks.nightlyTasks
 
                     let taskIndices = sectionTasks.indices
-                    var tasksPair = Array(zip(sectionTasks, taskIndices))
+                    let tasksPair = Array(zip(sectionTasks, taskIndices))
                     
                     ForEach(tasksPair, id: \.0.id, content: {
                         task, taskIndex in
@@ -36,7 +36,7 @@ struct ContentView: View {
                     let sectionTasks = nightWatchTasks.weeklyTasks
 
                     let taskIndices = sectionTasks.indices
-                    var tasksPair = Array(zip(sectionTasks, taskIndices))
+                    let tasksPair = Array(zip(sectionTasks, taskIndices))
                     
                     ForEach(tasksPair, id: \.0.id, content: {
                         task, taskIndex in
@@ -53,7 +53,7 @@ struct ContentView: View {
                     let sectionTasks = nightWatchTasks.monthlyTasks
 
                     let taskIndices = sectionTasks.indices
-                    var tasksPair = Array(zip(sectionTasks, taskIndices))
+                    let tasksPair = Array(zip(sectionTasks, taskIndices))
                     
                     ForEach(tasksPair, id: \.0.id, content: {
                         task, taskIndex in
